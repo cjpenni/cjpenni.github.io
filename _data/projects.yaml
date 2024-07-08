@@ -1,0 +1,10 @@
+- name: Libraries
+  projects:
+    - name: Climate Crisis
+      description: Climate crisis film repository
+
+    - name: Ants
+      description: Ants simulator
+
+    - name: Lecture Genie
+      description: Lecture video website
