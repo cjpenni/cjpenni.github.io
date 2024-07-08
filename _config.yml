@@ -1,18 +1,16 @@
 remote_theme: tedivm/jekyll-theme-portfolio
 
 
-title: Your awesome title
-author: Your Name
-email: your-email@domain.com
+title: Connor Pennington
+author: Connor Pennington
+email: cjpenni@clemson.edu
 description: >
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Connor Pennington Project Portfolio Website
 
 
-homepage: https://your.homepage.com
-github_username: cjpenni
-linkedin_username: Connor Pennington
+homepage: https://cjpenni.github.io
+github_username: https://github.com/cjpenni
+linkedin_username: www.linkedin.com/in/connor-j-pennington
 
 
 plugins:
