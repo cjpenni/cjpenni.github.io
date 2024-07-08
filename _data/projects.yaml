@@ -1,10 +1,14 @@
-- name: Libraries
+- name: Personal Projects
   projects:
-    - name: Climate Crisis
-      description: Climate crisis film repository
 
-    - name: Ants
-      description: Ants simulator
+    - name: Climate Crisis Film Repository
+      description: A web repository of over 500 films related to the climate crisis. The site provides film information, recommendations, and discussion boards.
+      github: cjpenni/climate_crisis_website
 
     - name: Lecture Genie
-      description: Lecture video website
+      description: A website that takes user-uploaded lecture videos and produces quiz questions, flashcards, and note sheets.
+      github: LectureGenieDevTeam/LectureGenie
+
+    - name: Ants
+      description: An ant simulation game based on state transitions, where ants forage for food, build nests, and protect their colony.
+      github: Elan456/Ants
