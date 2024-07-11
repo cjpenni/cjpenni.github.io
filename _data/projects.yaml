@@ -2,15 +2,16 @@
   projects:
 
     - name: Climate Crisis Film Repository
-      description: A web repository of over 500 films related to the climate crisis. The site provides film information, recommendations, and discussion boards.
+      description: This website was created to provide an accessible and informative platform for individuals interested in exploring the climate crisis through film. The website includes a curated film repository, expert analyses, a film recommendation system, and discussion boards. (Python) (LLMs) (API) (Streamlit)
       github: cjpenni/climate_crisis_website
       image: ClimateCrisisLogo.jpg
 
     - name: Lecture Genie
-      description: A website that takes user-uploaded lecture videos and produces quiz questions, flashcards, and note sheets.
+      description: LectureGenie is a software program specifically designed to enhance the learning experience with recorded lectures. It takes a lecture video as input and generates quiz questions, notes, and flashcards to aid understanding. It processes videos with and without audio. (Python) (AWS) (LLMs) (API) (Computer Vision) (NumPy) (Streamlit)
       github: LectureGenieDevTeam/LectureGenie
       image: LectureGenieLogo.jpg
 
-    - name: Ants
-      description: An ant simulation game based on state transitions, where ants forage for food, build nests, and protect their colony.
-      github: Elan456/Ants
+    - name: SEM Image Classifier with VGG16
+      description: This project focuses on developing a convolutional neural network (CNN) using TensorFlow to classify images into scanning electron microscope (SEM) images and non-SEM images using the VGG16 architecture. This was developed for my current research project with the Big Data Analytics Lab at Clemson University. Currently in progress. (Python) (TensorFlow) (Keras) (NumPy)
+      github: cjpenni/image_classifier
+      image: ImageClassifierLogo.png
