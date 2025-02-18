@@ -11,7 +11,7 @@
       github: LectureGenieDevTeam/LectureGenie
       image: LectureGenieLogo.jpg
 
-    - name: SEM Image Classifier with VGG16
-      description: This project focuses on developing a convolutional neural network (CNN) using TensorFlow to classify images into scanning electron microscope (SEM) images and non-SEM images using the VGG16 architecture. This was developed for my current research project with the Big Data Analytics Lab at Clemson University. Currently in progress. (Python) (TensorFlow) (Keras) (NumPy)
-      github: cjpenni/image_classifier
-      image: ImageClassifierLogo.png
+    - name: Weak-to-Strong Generalization in AI Moral Reasoning
+      description: This project explores the potential for creating superhuman AI systems capable of moral reasoning that can be evaluated by humans, or less advanced AI systems which in turn can be evaluated by humans. The goal was to develop a prompt suite for weak-strong generalization of moral reasoning. (Python) (OpenAI) (Mistral) (Claude) (NumPy)
+      github: cjpenni/weak-to-strong_generalization_in_ai_moral_reasoning
+      image: mai.png
