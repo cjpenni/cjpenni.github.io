@@ -1,15 +1,112 @@
 ---
-layout: portfolio
+layout: default
+title: Home
 ---
-<a href="about.html">About Me</a> | <a href="https://drive.google.com/file/d/1sEf9vrzd50xwr7nSxCtBECIgzADKUR8o/view?usp=sharing">Resume</a>
-<h1>Connor Pennington</h1>
-<p>An undergraduate computer science with a passion for Artificial Intelligence and Machine Learning. I thrive on tackling challenging problems and continuously learning and enhancing my skillset.</p>
-<br>
-<h2>Experience</h2>
-<h3>Software Engineer Intern | 402 Software Engineering Group - Summer 2024</h3>
-<p>
-    Leveraged machine learning by implementing a model trained on 1 million PDFs to automate table extraction from over 600 unique formats. Created an algorithm to programmatically reformat the tabular data into XML, XAML, and .cs files. This resulted in a 20% increase in software development productivity by eliminating the need for manual table extraction and reformatting.
-    (Python) (C#) (WPF) (XML) (XAML) (Pandas) (Machine Learning)
-</p>
-<br>
-<h2>Projects</h2>
+
+<section class="hero">
+    <div class="container">
+        <h1>Connor Pennington</h1>
+        <p class="hero-subtitle">
+            Computer Science Student & AI Enthusiast passionate about solving challenging problems 
+            through innovative technology and continuous learning.
+        </p>
+        <div class="hero-cta">
+            <a href="/about.html" class="btn btn-primary">Learn More About Me</a>
+            <a href="https://drive.google.com/file/d/1sEf9vrzd50xwr7nSxCtBECIgzADKUR8o/view?usp=sharing" 
+               class="btn btn-secondary" target="_blank">View Resume</a>
+        </div>
+    </div>
+</section>
+
+<div class="main-content">
+    <section class="experience">
+        <h2>Experience</h2>
+        
+        <div class="card">
+            <h3>Software Engineer Intern</h3>
+            <div class="card-meta">402 Software Engineering Group • Summer 2024</div>
+            <p>
+                Leveraged machine learning by implementing a model trained on 1 million PDFs to automate 
+                table extraction from over 600 unique formats. Created an algorithm to programmatically 
+                reformat the tabular data into XML, XAML, and .cs files. This resulted in a 20% increase 
+                in software development productivity by eliminating the need for manual table extraction 
+                and reformatting.
+            </p>
+            <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">C#</span>
+                <span class="tag">WPF</span>
+                <span class="tag">XML</span>
+                <span class="tag">XAML</span>
+                <span class="tag">Pandas</span>
+                <span class="tag">Machine Learning</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <h2>Featured Projects</h2>
+        
+        <div class="projects-grid">
+            {% for category in site.data.projects %}
+                {% for project in category.projects %}
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">{{ project.name }}</h3>
+                        <p class="project-description">{{ project.description }}</p>
+                        <div class="project-links">
+                            {% if project.github %}
+                            <a href="https://github.com/{{ project.github }}" class="project-link" target="_blank">
+                                View on GitHub →
+                            </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            {% endfor %}
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2>Technical Skills</h2>
+        
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>Programming Languages</h4>
+                <ul class="skill-list">
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C#</li>
+                    <li>JavaScript</li>
+                    <li>HTML/CSS</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category">
+                <h4>AI/ML & Data Science</h4>
+                <ul class="skill-list">
+                    <li>Machine Learning</li>
+                    <li>Computer Vision</li>
+                    <li>Natural Language Processing</li>
+                    <li>NumPy</li>
+                    <li>Pandas</li>
+                    <li>OpenAI API</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category">
+                <h4>Tools & Technologies</h4>
+                <ul class="skill-list">
+                    <li>AWS</li>
+                    <li>Git</li>
+                    <li>Streamlit</li>
+                    <li>WPF</li>
+                    <li>XML/XAML</li>
+                    <li>API Development</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>

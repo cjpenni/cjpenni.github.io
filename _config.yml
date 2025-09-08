@@ -1,19 +1,23 @@
-remote_theme: tedivm/jekyll-theme-portfolio
-
-
+# Basic Jekyll configuration without remote theme
 title: Connor Pennington
 author: Connor Pennington
 email: cjpenni@clemson.edu
 description: >
-  Connor Pennington Project Portfolio Website
+  Connor Pennington - Computer Science Student & AI Enthusiast
 
+url: "https://connorpennington.dev"
+baseurl: ""
 
-homepage: https://cjpenni.github.io
-github_username: cjpenni
-linkedin_username: connor-j-pennington
-
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
 
 plugins:
- - jekyll-feed
- - jekyll-seo-tag
- - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude files
+exclude:
+  - README.md
+  - .gitignore
