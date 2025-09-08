@@ -1,112 +1,136 @@
----
-layout: default
-title: Home
----
-
-<section class="hero">
-    <div class="container">
-        <h1>Connor Pennington</h1>
-        <p class="hero-subtitle">
-            Computer Science Student & AI Enthusiast passionate about solving challenging problems 
-            through innovative technology and continuous learning.
-        </p>
-        <div class="hero-cta">
-            <a href="/about.html" class="btn btn-primary">Learn More About Me</a>
-            <a href="https://drive.google.com/file/d/1sEf9vrzd50xwr7nSxCtBECIgzADKUR8o/view?usp=sharing" 
-               class="btn btn-secondary" target="_blank">View Resume</a>
-        </div>
-    </div>
-</section>
-
-<div class="main-content">
-    <section class="experience">
-        <h2>Experience</h2>
-        
-        <div class="card">
-            <h3>Software Engineer Intern</h3>
-            <div class="card-meta">402 Software Engineering Group • Summer 2024</div>
-            <p>
-                Leveraged machine learning by implementing a model trained on 1 million PDFs to automate 
-                table extraction from over 600 unique formats. Created an algorithm to programmatically 
-                reformat the tabular data into XML, XAML, and .cs files. This resulted in a 20% increase 
-                in software development productivity by eliminating the need for manual table extraction 
-                and reformatting.
-            </p>
-            <div class="project-tags">
-                <span class="tag">Python</span>
-                <span class="tag">C#</span>
-                <span class="tag">WPF</span>
-                <span class="tag">XML</span>
-                <span class="tag">XAML</span>
-                <span class="tag">Pandas</span>
-                <span class="tag">Machine Learning</span>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">Portfolio</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About</a>
             </div>
         </div>
-    </section>
+    </nav>
 
-    <section class="projects">
-        <h2>Featured Projects</h2>
-        
-        <div class="projects-grid">
-            {% for category in site.data.projects %}
-                {% for project in category.projects %}
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">{{ project.name }}</h3>
-                        <p class="project-description">{{ project.description }}</p>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Your Name</span>
+                </h1>
+                <p class="hero-subtitle">Full Stack Developer & Problem Solver</p>
+                <div class="hero-buttons">
+                    <a href="about.html" class="btn btn-primary">About Me</a>
+                    <a href="#projects" class="btn btn-secondary">View Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Project One</h3>
+                        <p>A modern web application built with React and Node.js. Features real-time updates and responsive design.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
                         <div class="project-links">
-                            {% if project.github %}
-                            <a href="https://github.com/{{ project.github }}" class="project-link" target="_blank">
-                                View on GitHub →
-                            </a>
-                            {% endif %}
+                            <a href="#" class="project-link">View Project</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3>Project Two</h3>
+                        <p>An e-commerce platform with payment integration and admin dashboard. Built for scalability and performance.</p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Project</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3>Project Three</h3>
+                        <p>A mobile-first progressive web app with offline capabilities and push notifications.</p>
+                        <div class="project-tags">
+                            <span class="tag">PWA</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Project</a>
+                            <a href="#" class="project-link">GitHub</a>
                         </div>
                     </div>
                 </div>
-                {% endfor %}
-            {% endfor %}
-        </div>
-    </section>
+            </div>
+        </section>
 
-    <section class="skills">
-        <h2>Technical Skills</h2>
-        
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h4>Programming Languages</h4>
-                <ul class="skill-list">
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>C#</li>
-                    <li>JavaScript</li>
-                    <li>HTML/CSS</li>
-                    <li>SQL</li>
-                </ul>
+        <section class="skills">
+            <div class="container">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Vue.js</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Express</span>
+                            <span class="skill-tag">Django</span>
+                            <span class="skill-tag">REST APIs</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Database</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">Redis</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Webpack</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <div class="skill-category">
-                <h4>AI/ML & Data Science</h4>
-                <ul class="skill-list">
-                    <li>Machine Learning</li>
-                    <li>Computer Vision</li>
-                    <li>Natural Language Processing</li>
-                    <li>NumPy</li>
-                    <li>Pandas</li>
-                    <li>OpenAI API</li>
-                </ul>
-            </div>
-            
-            <div class="skill-category">
-                <h4>Tools & Technologies</h4>
-                <ul class="skill-list">
-                    <li>AWS</li>
-                    <li>Git</li>
-                    <li>Streamlit</li>
-                    <li>WPF</li>
-                    <li>XML/XAML</li>
-                    <li>API Development</li>
-                </ul>
-            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Your Portfolio. Built with passion and code.</p>
         </div>
-    </section>
-</div>
+    </footer>
+</body>
+</html>
