@@ -3,125 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
+    <title>Connor Pennington - Full Stack Developer</title>
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-brand">Portfolio</a>
-            <div class="nav-links">
-                <a href="index.html" class="nav-link active">Home</a>
-                <a href="about.html" class="nav-link">About</a>
-            </div>
-        </div>
-    </nav>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav-brand">Connor Pennington</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
         <section class="hero">
             <div class="container">
-                <h1 class="hero-title">
-                    Hi, I'm <span class="gradient-text">Your Name</span>
-                </h1>
-                <p class="hero-subtitle">Full Stack Developer & Problem Solver</p>
-                <div class="hero-buttons">
+                <h1>Hi, I'm Connor Pennington</h1>
+                <p class="hero-subtitle">Full Stack Developer & AI Enthusiast</p>
+                <p class="hero-description">
+                    Passionate about creating innovative solutions with modern web technologies, 
+                    machine learning, and artificial intelligence. Currently pursuing Computer Science 
+                    at Virginia Tech.
+                </p>
+                <div class="hero-cta">
                     <a href="about.html" class="btn btn-primary">About Me</a>
                     <a href="#projects" class="btn btn-secondary">View Projects</a>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="projects">
+        <section id="projects" class="section">
             <div class="container">
-                <h2 class="section-title">Featured Projects</h2>
+                <h2>Featured Projects</h2>
                 <div class="projects-grid">
                     <div class="project-card">
-                        <h3>Project One</h3>
-                        <p>A modern web application built with React and Node.js. Features real-time updates and responsive design.</p>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">MongoDB</span>
+                        <div class="project-image">
+                            <img src="assets/images/projects/mai.png" alt="MAI - Personal AI Assistant" loading="lazy">
                         </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">View Project</a>
-                            <a href="#" class="project-link">GitHub</a>
-                        </div>
-                    </div>
-                    
-                    <div class="project-card">
-                        <h3>Project Two</h3>
-                        <p>An e-commerce platform with payment integration and admin dashboard. Built for scalability and performance.</p>
-                        <div class="project-tags">
-                            <span class="tag">Vue.js</span>
-                            <span class="tag">Python</span>
-                            <span class="tag">PostgreSQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">View Project</a>
-                            <a href="#" class="project-link">GitHub</a>
+                        <div class="project-content">
+                            <h3 class="project-title">MAI - Personal AI Assistant</h3>
+                            <p class="project-description">
+                                An advanced AI assistant built with Python, featuring natural language processing, 
+                                voice recognition, and intelligent task automation. Integrates with multiple APIs 
+                                to provide comprehensive personal assistance.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">NLP</span>
+                                <span class="tag">Speech Recognition</span>
+                                <span class="tag">API Integration</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/cjpenni/MAI" class="project-link" target="_blank">GitHub</a>
+                            </div>
                         </div>
                     </div>
-                    
+
                     <div class="project-card">
-                        <h3>Project Three</h3>
-                        <p>A mobile-first progressive web app with offline capabilities and push notifications.</p>
-                        <div class="project-tags">
-                            <span class="tag">PWA</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Firebase</span>
+                        <div class="project-image">
+                            <img src="assets/images/projects/LectureGenieLogo.jpg" alt="Lecture Genie" loading="lazy">
                         </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">View Project</a>
-                            <a href="#" class="project-link">GitHub</a>
+                        <div class="project-content">
+                            <h3 class="project-title">Lecture Genie</h3>
+                            <p class="project-description">
+                                An intelligent lecture analysis tool that processes educational content using AI. 
+                                Features automated transcription, content summarization, and key concept extraction 
+                                to enhance learning experiences.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">AI/ML</span>
+                                <span class="tag">Natural Language Processing</span>
+                                <span class="tag">Education Technology</span>
+                                <span class="tag">Python</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/cjpenni/LectureGenie" class="project-link" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/projects/ClimateCrisisLogo.jpg" alt="Climate Crisis Visualization" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Climate Crisis Data Visualization</h3>
+                            <p class="project-description">
+                                Interactive data visualization project showcasing climate change trends and impacts. 
+                                Features dynamic charts, real-time data integration, and compelling visual storytelling 
+                                to raise awareness about environmental issues.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Data Visualization</span>
+                                <span class="tag">D3.js</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Environmental Data</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/cjpenni/ClimateCrisis" class="project-link" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/projects/ImageClassifierLogo.png" alt="Image Classifier" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Deep Learning Image Classifier</h3>
+                            <p class="project-description">
+                                Advanced image classification system using deep learning techniques. Implements 
+                                convolutional neural networks for accurate image recognition and categorization 
+                                across multiple object classes.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Deep Learning</span>
+                                <span class="tag">TensorFlow</span>
+                                <span class="tag">Computer Vision</span>
+                                <span class="tag">Python</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/cjpenni/ImageClassifier" class="project-link" target="_blank">GitHub</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="skills">
+        <section class="skills section">
             <div class="container">
-                <h2 class="section-title">Skills & Technologies</h2>
+                <h2>Skills & Technologies</h2>
                 <div class="skills-grid">
                     <div class="skill-category">
-                        <h3>Frontend</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">HTML5</span>
-                            <span class="skill-tag">CSS3</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">React</span>
-                            <span class="skill-tag">Vue.js</span>
-                        </div>
+                        <h4>Programming Languages</h4>
+                        <ul class="skill-list">
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>Java</li>
+                            <li>C++</li>
+                            <li>HTML/CSS</li>
+                        </ul>
                     </div>
                     <div class="skill-category">
-                        <h3>Backend</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Node.js</span>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">Express</span>
-                            <span class="skill-tag">Django</span>
-                            <span class="skill-tag">REST APIs</span>
-                        </div>
+                        <h4>AI & Machine Learning</h4>
+                        <ul class="skill-list">
+                            <li>TensorFlow</li>
+                            <li>PyTorch</li>
+                            <li>Natural Language Processing</li>
+                            <li>Computer Vision</li>
+                            <li>Deep Learning</li>
+                        </ul>
                     </div>
                     <div class="skill-category">
-                        <h3>Database</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">MongoDB</span>
-                            <span class="skill-tag">PostgreSQL</span>
-                            <span class="skill-tag">MySQL</span>
-                            <span class="skill-tag">Redis</span>
-                        </div>
+                        <h4>Web Development</h4>
+                        <ul class="skill-list">
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>REST APIs</li>
+                            <li>Responsive Design</li>
+                        </ul>
                     </div>
                     <div class="skill-category">
-                        <h3>Tools</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Git</span>
-                            <span class="skill-tag">Docker</span>
-                            <span class="skill-tag">AWS</span>
-                            <span class="skill-tag">Webpack</span>
-                        </div>
+                        <h4>Tools & Technologies</h4>
+                        <ul class="skill-list">
+                            <li>Git/GitHub</li>
+                            <li>Docker</li>
+                            <li>AWS</li>
+                            <li>MongoDB</li>
+                            <li>PostgreSQL</li>
+                        </ul>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2>Let's Connect</h2>
+                <p>I'm always interested in new opportunities and exciting projects. Let's build something amazing together!</p>
+                <div class="hero-cta">
+                    <a href="mailto:connor@connorpennington.dev" class="btn btn-primary">Get In Touch</a>
+                    <a href="https://github.com/cjpenni" class="btn btn-secondary" target="_blank">GitHub</a>
                 </div>
             </div>
         </section>
@@ -129,7 +200,7 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Your Portfolio. Built with passion and code.</p>
+            <p>&copy; 2025 Connor Pennington. Built with passion and code.</p>
         </div>
     </footer>
 </body>
