@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connor Pennington - Full Stack Developer</title>
+    <title>Connor Pennington</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,6 @@
             <a href="index.html" class="nav-brand">Connor Pennington</a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -26,15 +25,148 @@
         <section class="hero">
             <div class="container">
                 <h1>Hi, I'm Connor Pennington</h1>
-                <p class="hero-subtitle">Full Stack Developer & AI Enthusiast</p>
+                <p class="hero-subtitle">Software & AI Engineer</p>
                 <p class="hero-description">
-                    Passionate about creating innovative solutions with modern web technologies, 
-                    machine learning, and artificial intelligence. Currently pursuing Computer Science 
-                    at Virginia Tech.
+                    Passionate about creating innovative solutions with
+                    machine learning and artificial intelligence. Currently studying
+                    Computer Science at Clemson University.
                 </p>
                 <div class="hero-cta">
-                    <a href="about.html" class="btn btn-primary">About Me</a>
-                    <a href="#projects" class="btn btn-secondary">View Projects</a>
+                    <a href="assets/Pennington_Resume.pdf" class="btn btn-primary" target="_blank" rel="noopener">View Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="container">
+                <h2>Experience</h2>
+                <div class="experience-list">
+                    <div class="experience-item">
+                        <h3 class="experience-company">NVIDIA</h3>
+                        <div class="experience-header">
+                            <div class="experience-header-main">
+                                <span class="experience-role">Student Collaborator</span>
+                                <span class="experience-date">Aug 2025 – Present</span>
+                            </div>
+                            <span class="experience-location">Remote</span>
+                        </div>
+                        <ul class="experience-details">
+                            <li>Benchmark agentic workflow frameworks (AWorld and AgentOrchestra) on the GAIA dataset, where state of the art models are replaced with a Small Language Model (SLM).</li>
+                            <li>Create a dataset for finetuning the SLM from agent failure patterns, traces, and distilled data focused on Metropolis use cases, such as public safety, warehouses, and traffic.</li>
+                            <li>Finetune and evaluate the model, measuring against the baseline out-of-the-box SLM.</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <h3 class="experience-company">Sixfold AI</h3>
+                        <div class="experience-header">
+                            <div class="experience-header-main">
+                                <span class="experience-role">Engineering Intern</span>
+                                <span class="experience-date">Jun 2025 – Aug 2025</span>
+                            </div>
+                            <span class="experience-location">New York, NY</span>
+                        </div>
+                        <ul class="experience-details">
+                            <li>Improved the PDF data extraction pipeline in Python, increasing system accuracy by 8%.</li>
+                            <li>Integrated an open-source LLM chat interface with a Model Context Protocol (MCP) gateway and multiple servers, enabling workflow automation that saved employees 10+ hours weekly.</li>
+                            <li>Collaborated closely across teams of different roles to define success metrics and applied LLM evaluation methods (pairwise comparisons and accuracy) to validate and refine automation.</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <h3 class="experience-company">OpenAI</h3>
+                        <div class="experience-header">
+                            <div class="experience-header-main">
+                                <span class="experience-role">Student Collaborator</span>
+                                <span class="experience-date">Aug 2024 – Dec 2024</span>
+                            </div>
+                            <span class="experience-location">Remote</span>
+                        </div>
+                        <ul class="experience-details">
+                            <li>Built a prompt suite to test and guide the moral reasoning capabilities of LLMs.</li>
+                            <li>Implemented a system where a less advanced model generates complex moral scenarios for a more advanced model to analyze and respond to based on the moral implications presented..</li>
+                            <li>Designed evaluations to analyze moral learning effectiveness across 3 different model gaps.</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <h3 class="experience-company">402 SOFTWARE ENGINEERING GROUP</h3>
+                        <div class="experience-header">
+                            <div class="experience-header-main">
+                                <span class="experience-role">Software Engineering Intern</span>
+                                <span class="experience-date">Jun 2024 – Aug 2024</span>
+                            </div>
+                            <span class="experience-location">Warner Robins, GA</span>
+                        </div>
+                        <ul class="experience-details">
+                            <li>Utilized a machine learning model to extract tables from over 600 uniquely formatted PDFs.</li>
+                            <li>Engineered a C# pipeline to convert the extracted tables from CSV to XML files, eliminating manual table processing and boosting development productivity by approximately 20%.</li>
+                            </ul>
+                    </div>
+                    <!-- Add more experience items as needed -->
+                </div>
+            </div>
+        </section>
+
+        <section id="research" class="section">
+            <div class="container">
+                <h2>Research</h2>
+                <div class="experience-list">
+                    <div class="experience-item">
+                        <h3 class="experience-company">Humans and Technology Laboratory (HATLab)</h3>
+                        <div class="experience-header">
+                            <div class="experience-header-main">
+                                <span class="experience-role">Undergraduate Research Assistant</span>
+                                <span class="experience-date">Jan 2025 – Present</span>
+                            </div>
+                            <span class="experience-location">Clemson, SC</span>
+                        </div>
+                        <ul class="experience-details">
+                            <li>Design prompts for LLMs to create inferences and recommendations on participant data.</li>
+                            <li>Build a pipeline that inputs raw data and outputs a Sankey Diagram of inferences and recommendations.</li>
+                            <li>Implement a RAG system to match LLM recommendations with real products from Amazon.</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <h3 class="experience-company">Big Data Analytics Lab</h3>
+                        <div class="experience-header">
+                            <div class="experience-header-main">
+                                <span class="experience-role">Undergraduate Research Assistant</span>
+                                <span class="experience-date">Aug 2023 – Present</span>
+                            </div>
+                            <span class="experience-location">Clemson, SC</span>
+                        </div>
+                        <ul class="experience-details">
+                            <li>Develop a web scraping tool to download open-source material science research articles.</li>
+                            <li>Parse and store text and image elements from documents for Multimodal RAG.</li>
+                            <li>Create a chat-bot application that allows users to interact with the RAG enhanced LLM.</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <h3 class="experience-company">Advanced Imaging Lab</h3>
+                        <div class="experience-header">
+                            <div class="experience-header-main">
+                                <span class="experience-role">Undergraduate Research Assistant</span>
+                                <span class="experience-date">Oct 2024 – May 2025</span>
+                            </div>
+                            <span class="experience-location">Clemson, SC</span>
+                        </div>
+                        <ul class="experience-details">
+                            <li>Benchmarked state of the art models for 3D scene reconstruction.</li>
+                            <li>Submitted paper to WACV 2025 as co-author.</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <h3 class="experience-company">Sensors, Materials, and Analytics for Regenerating Tissues (SMART) Lab</h3>
+                        <div class="experience-header">
+                            <div class="experience-header-main">
+                                <span class="experience-role">Undergraduate Research Assistant</span>
+                                <span class="experience-date">Aug 2022 – Jul 2023</span>
+                            </div>
+                            <span class="experience-location">Clemson, SC</span>
+                        </div>
+                        <ul class="experience-details">
+                            <li>Redesigned Python scripts to reformat amino acid data.</li>
+                            <li>Developed a user interface, allowin users to easily input their amino acid data to train neural network models.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -43,38 +175,13 @@
             <div class="container">
                 <h2>Featured Projects</h2>
                 <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/images/projects/mai.png" alt="MAI - Personal AI Assistant" loading="lazy">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">MAI - Personal AI Assistant</h3>
-                            <p class="project-description">
-                                An advanced AI assistant built with Python, featuring natural language processing, 
-                                voice recognition, and intelligent task automation. Integrates with multiple APIs 
-                                to provide comprehensive personal assistance.
-                            </p>
-                            <div class="project-tags">
-                                <span class="tag">Python</span>
-                                <span class="tag">NLP</span>
-                                <span class="tag">Speech Recognition</span>
-                                <span class="tag">API Integration</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/cjpenni/MAI" class="project-link" target="_blank">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
 
                     <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/images/projects/LectureGenieLogo.jpg" alt="Lecture Genie" loading="lazy">
-                        </div>
                         <div class="project-content">
                             <h3 class="project-title">Lecture Genie</h3>
                             <p class="project-description">
-                                An intelligent lecture analysis tool that processes educational content using AI. 
-                                Features automated transcription, content summarization, and key concept extraction 
+                                An intelligent lecture analysis tool that processes educational videos using AI. 
+                                Features automated transcription, content summarization, and study tool generation 
                                 to enhance learning experiences.
                             </p>
                             <div class="project-tags">
@@ -84,53 +191,24 @@
                                 <span class="tag">Python</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/cjpenni/LectureGenie" class="project-link" target="_blank">GitHub</a>
+                                <a href="https://github.com/LectureGenieDevTeam/LectureGenie" class="project-link" target="_blank">GitHub</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/images/projects/ClimateCrisisLogo.jpg" alt="Climate Crisis Visualization" loading="lazy">
-                        </div>
                         <div class="project-content">
-                            <h3 class="project-title">Climate Crisis Data Visualization</h3>
+                            <h3 class="project-title">Climate Crisis Film Repository</h3>
                             <p class="project-description">
-                                Interactive data visualization project showcasing climate change trends and impacts. 
-                                Features dynamic charts, real-time data integration, and compelling visual storytelling 
-                                to raise awareness about environmental issues.
+                                An engaging platform for exploring the climate crisis through film, featuring a curated collection of climate-focused movies and expert analyses for deeper understanding. It also offers personalized film recommendations and discussion boards to connect with others passionate about the environment.
                             </p>
                             <div class="project-tags">
-                                <span class="tag">Data Visualization</span>
-                                <span class="tag">D3.js</span>
-                                <span class="tag">JavaScript</span>
-                                <span class="tag">Environmental Data</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/cjpenni/ClimateCrisis" class="project-link" target="_blank">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/images/projects/ImageClassifierLogo.png" alt="Image Classifier" loading="lazy">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Deep Learning Image Classifier</h3>
-                            <p class="project-description">
-                                Advanced image classification system using deep learning techniques. Implements 
-                                convolutional neural networks for accurate image recognition and categorization 
-                                across multiple object classes.
-                            </p>
-                            <div class="project-tags">
-                                <span class="tag">Deep Learning</span>
-                                <span class="tag">TensorFlow</span>
-                                <span class="tag">Computer Vision</span>
                                 <span class="tag">Python</span>
+                                <span class="tag">Streamlit</span>
+                                <span class="tag">Gemini</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/cjpenni/ImageClassifier" class="project-link" target="_blank">GitHub</a>
+                                <a href="https://github.com/cjpenni/climate_crisis_website" class="project-link" target="_blank">GitHub</a>
                             </div>
                         </div>
                     </div>
@@ -146,10 +224,13 @@
                         <h4>Programming Languages</h4>
                         <ul class="skill-list">
                             <li>Python</li>
-                            <li>JavaScript</li>
-                            <li>Java</li>
                             <li>C++</li>
-                            <li>HTML/CSS</li>
+                            <li>C</li>
+                            <li>SQL</li>
+                            <li>Java</li>
+                            <li>Ruby</li>
+                            <li>JavaScript</li>
+                            <li>C#</li>
                         </ul>
                     </div>
                     <div class="skill-category">
@@ -157,19 +238,11 @@
                         <ul class="skill-list">
                             <li>TensorFlow</li>
                             <li>PyTorch</li>
-                            <li>Natural Language Processing</li>
-                            <li>Computer Vision</li>
-                            <li>Deep Learning</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h4>Web Development</h4>
-                        <ul class="skill-list">
-                            <li>React</li>
-                            <li>Node.js</li>
-                            <li>Express.js</li>
-                            <li>REST APIs</li>
-                            <li>Responsive Design</li>
+                            <li>Agent Frameworks</li>
+                            <li>Model Context Protocol</li>
+                            <li>RAG</li>
+                            <li>Finetuning</li>
+                            <li>NeRF</li>
                         </ul>
                     </div>
                     <div class="skill-category">
@@ -177,9 +250,34 @@
                         <ul class="skill-list">
                             <li>Git/GitHub</li>
                             <li>Docker</li>
+                            <li>Linux</li>
+                            <li>Postman</li>
+                            <li>Cluster Computing</li>
+                            <li>Cursor</li>
                             <li>AWS</li>
-                            <li>MongoDB</li>
-                            <li>PostgreSQL</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <div class="container">
+                <h2>Education</h2>
+                <div class="experience-list">
+                    <div class="experience-item">
+                        <h3 class="experience-company">Clemson University</h3>
+                        <div class="experience-header">
+                            <div class="experience-header-main">
+                                <span class="experience-role">B.S. Computer Science, Artificial Intelligence minor</span>
+                                <span class="experience-date">Aug 2022 – Dec 2025</span>
+                            </div>
+                            <span class="experience-location">Clemson, SC</span>
+                        </div>
+                        <ul class="experience-details">
+                            <li><b>GPA:</b> 4.00/4.00</li>
+                            <li><b>Clubs:</b> AI Club, Latin Dance Club, Book Club, Intramural Ultimate Frisbee, and Clay Club</li>
+                            <li><b>Study Abroad:</b> Cryptocurrency and Blockchain Experience in Nicosia, Cyprus.</li>
                         </ul>
                     </div>
                 </div>
@@ -191,8 +289,8 @@
                 <h2>Let's Connect</h2>
                 <p>I'm always interested in new opportunities and exciting projects. Let's build something amazing together!</p>
                 <div class="hero-cta">
-                    <a href="mailto:connor@connorpennington.dev" class="btn btn-primary">Get In Touch</a>
-                    <a href="https://github.com/cjpenni" class="btn btn-secondary" target="_blank">GitHub</a>
+                    <a href="mailto:connorpennington2004@gmail.com" class="btn btn-primary">Get In Touch</a>
+                    <a href="https://www.linkedin.com/in/connor-j-pennington/" class="btn btn-secondary" target="_blank">LinkedIn</a>
                 </div>
             </div>
         </section>
@@ -200,7 +298,7 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Connor Pennington. Built with passion and code.</p>
+            <p>&copy; 2025 Connor Pennington. Built with AI.</p>
         </div>
     </footer>
 </body>
